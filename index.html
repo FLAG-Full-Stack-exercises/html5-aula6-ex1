@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Aula 6: Ex.1</title>
+    <meta name="description" content="Pay Form">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Bruno VSilva">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="form">
+
+    <div class="value1">
+        <p>2 €</p>
+    </div>
+
+    <!-- spacing --><div style="height: 25px"></div>
+
+    <input class="slider" type="range" max="20" value="2" step="1" oninput="rangeValue.innerText = this.Value" style="width: 345px;">
+
+    <!-- spacing --><div style="height: 25px"></div>
+    
+    <div class="desc1">
+        <p>Doação mínima de 1€</p>
+    </div>
+
+    <!-- spacing --><div style="height: 50px"></div>
+
+    <div class="toggle">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="button round"></span>
+        </label>
+        <div class="desc2">
+            <p>Quero suportar as taxas da transação</p>
+        </div>
+    </div>
+
+    <!-- spacing --><div style="height: 60px"></div>
+
+    <div class="desc2">
+        <p>O PayPal tem uma taxa de 3.49% sobre o valor total, mais um custo fixo de 0.42€</p>
+    </div>
+
+    <!-- spacing --><div style="height: 80px"></div>
+
+    <div class="methods">
+        <img src="/img/method1.png" alt="mbway" style="cursor: pointer">
+        <img src="/img/method2.png" alt="paypal" style="cursor: pointer">
+        <img src="/img/method3.png" alt="paysafecard" style="cursor: pointer">
+    </div>
+
+    <!-- spacing --><div style="height: 60px"></div>
+
+    <div class="value2">
+        <p style="font-size: 15px; font-weight: bold">streamer vai receber</p>
+        <p style="font-size: 20px; font-weight: bold">1,77€</p>
+    </div>
+
+    <!-- spacing --><div style="height: 50px"></div>
+
+    <input type="text" class="phone" maxlength="9" placeholder="&#127477;&#127481;  +351  &#9662      910 000 000">
+
+    <!-- spacing --><div style="height: 10px"></div>
+
+    ​<textarea class="message" placeholder="Mensagem"></textarea>
+
+    <!-- spacing --><div style="height: 15px"></div>
+
+    <div class="desc1">
+        <p>70 caracteres restantes</p>
+    </div>
+
+    <!-- spacing --><div style="height: 50px"></div>
+
+    <div class="checkboxes">
+        <input type="checkbox" id="box1" style="cursor: pointer">
+        <label class="desc3" for="box1">Aceito a política de privacidade e concordo que não há reembolso da doação</label>
+    </div>
+
+    <!-- spacing --><div style="height: 20px"></div>
+
+    <div class="checkboxes">
+        <input type="checkbox" id="box2" style="cursor: pointer">
+        <label class="desc3" for="box2">Aceito que ......... marketing</label>
+    </div>
+
+    <!-- spacing --><div style="height: 40px"></div>
+
+    <input type="submit" class="submit" value="Doar 2€">
+
+</div>
+
+</body>
+</html>
